@@ -1,0 +1,35 @@
+{
+  "name": "yu-homepage-2015",
+  "version": "1.0.0",
+  "description": "Re Design Mock up of home page and interior pages",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james917/yu-homepage-2015.git"
+  },
+  "keywords": [
+    "gulp",
+    "LESS",
+    "nodejs",
+    "bower",
+    "bootstrap",
+    "jQuery"
+  ],
+  "author": "James Leone <james.leone@yu.edu>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/james917/yu-homepage-2015/issues"
+  },
+  "homepage": "https://github.com/james917/yu-homepage-2015#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-path": "^2.0.2",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1"
+  }
+}
