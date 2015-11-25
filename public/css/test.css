@@ -6831,6 +6831,32 @@ body {
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 /* Flip around the padding for proper display in narrow viewports */
+#toolKit {
+  background-color: #ccc;
+}
+#toolKit .navbar-nav > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#toolKit .navbar-fixed-top-toolKit {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#toolKit .navbar-toolKit {
+  position: relative;
+  min-height: 5px;
+  margin-bottom: 0;
+  border: transparent;
+}
+#toolKit a:hover,
+#toolKit a:focus {
+  color: #999;
+  text-decoration: underline;
+}
+.navbar-fixed-top-main {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */

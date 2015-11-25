@@ -47,6 +47,42 @@ body {
 //   width: auto;
 // }
 
+#toolKit {
+  background-color: #ccc;
+  & .navbar-nav > li > a {
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+  & .navbar-nav {
+      margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+
+       > li > a {
+         padding-top:0;
+         padding-bottom:0;
+         line-height: @line-height-computed;
+  }
+& .navbar-fixed-top-toolKit {
+    margin-top:0;
+    margin-bottom:0;
+}
+ & .navbar-toolKit {
+    position: relative;
+    min-height: 5px;
+    margin-bottom:0;
+    border:transparent;
+  }
+ & a:hover, a:focus {
+    color: #999;
+    text-decoration: underline;
+  }
+}
+
+.navbar-fixed-top-main {
+    margin-top:2rem;
+    margin-bottom:0;
+  }
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
