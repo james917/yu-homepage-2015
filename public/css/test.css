@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8915,7 +8916,7 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 /* Flip around the padding for proper display in narrow viewports */
 #toolKit {
-  background-color: #ccc;
+  background: linear-gradient(90deg, #ccc 74%, #00264b 26%);
 }
 #toolKit .navbar-nav > li > a {
   padding-top: 0px;
@@ -8927,7 +8928,9 @@ body {
 #toolKit .navbar-nav > li > a {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 20px;
+  line-height: 2px;
+  color: #999;
+  font-size: 12px;
 }
 #toolKit .navbar-fixed-top-toolKit {
   margin-top: 0;
@@ -8935,14 +8938,12 @@ body {
 }
 #toolKit .navbar-toolKit {
   position: relative;
-  min-height: 5px;
+  min-height: 2px;
   margin-bottom: 0;
   border: transparent;
 }
-#toolKit a:hover,
-#toolKit a:focus {
-  color: #999;
-  text-decoration: underline;
+#toolKit .nav > li > a {
+  padding: 5px 15px;
 }
 .navbar-fixed-top-main {
   margin-top: 2rem;

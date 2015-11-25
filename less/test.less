@@ -1,5 +1,6 @@
 @import "./bower_components/bootstrap/less/bootstrap.less";
 @import "./bower_components/fontawesome/less/font-awesome.less";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 
 /* GLOBAL STYLES
@@ -9,6 +10,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  // font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -38,7 +40,8 @@ body {
 // }
 
 #toolKit {
-  background-color: #ccc;
+  // background-color: #ccc;
+   background: linear-gradient(90deg, #ccc 74%, #00264b 26%);
   & .navbar-nav > li > a {
     padding-top:0px;
     padding-bottom:0px;
@@ -48,22 +51,23 @@ body {
        > li > a {
          padding-top:0;
          padding-bottom:0;
-         line-height: @line-height-computed;
-   }
-}
-& .navbar-fixed-top-toolKit {
-    margin-top:0;
-    margin-bottom:0;
-}
+         line-height:2px;
+         color:#999;
+         font-size:12px;
+      }
+  }
+  & .navbar-fixed-top-toolKit {
+      margin-top:0;
+      margin-bottom:0;
+  }
  & .navbar-toolKit {
     position: relative;
-    min-height: 5px;
+    min-height: 2px;
     margin-bottom:0;
     border:transparent;
   }
- & a:hover, a:focus {
-    color: #999;
-    text-decoration: underline;
+  & .nav > li > a {
+    padding: 5px 15px;
   }
 }
 
