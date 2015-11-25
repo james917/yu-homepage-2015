@@ -74,12 +74,19 @@ body {
 .navbar-fixed-top-main {
     margin-top:2rem;
     margin-bottom:0;
-    & .navbar-inverse {
-        background-color:#fff;
-        border-color: #080808;
+    & .nav > li {
+        position: relative;
+        display: block;
+        border-left: solid 1px black;
     }
   }
-
+.navbar-inverse {
+        background-color:#fff;
+        border-color: #080808;
+        border-bottom: transparent;
+        border-left: transparent;
+        border-right: transparent;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
