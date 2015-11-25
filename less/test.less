@@ -74,6 +74,10 @@ body {
 .navbar-fixed-top-main {
     margin-top:2rem;
     margin-bottom:0;
+    & .navbar-inverse {
+        background-color:#fff;
+        border-color: #080808;
+    }
   }
 
 
@@ -143,6 +147,9 @@ body {
 @media (min-width: 768px) {
   #toolKit {
    background: linear-gradient(90deg, #ccc 85%, #00264b 15%);
+  }
+  .navbar {
+    border-radius:0;
   }
   /* Navbar positioning foo */
   .navbar-wrapper {
