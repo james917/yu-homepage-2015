@@ -8909,12 +8909,15 @@ button.close {
 /* Padding below the footer and lighter body text */
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #fff;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-/* Flip around the padding for proper display in narrow viewports */
+#YUheader {
+  display: block;
+  height: auto;
+  background-color: #fff;
+}
 #toolKit {
   background: linear-gradient(90deg, #e3e3e3 74%, #00264b 26%);
 }
@@ -8946,13 +8949,23 @@ body {
   padding: 5px 15px;
 }
 #toolKit .toolkit {
-  color: red;
+  color: #fff !important;
+}
+.searchForm {
+  margin-top: 2rem;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: transparent;
 }
 .navLogo {
-  margin-top: 3rem;
+  margin-top: 4rem;
+}
+.navbar-fixed-top {
+  border: 1px solid;
 }
 .navbar-fixed-top-main {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 0;
 }
 .navbar-fixed-top-main .nav > li {
@@ -8995,6 +9008,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
+  margin-top: 1;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
