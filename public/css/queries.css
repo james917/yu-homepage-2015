@@ -1,0 +1,64 @@
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  #toolKit {
+    background: linear-gradient(90deg, #ccc 85%, #00264b 15%);
+  }
+  .navbar {
+    border-radius: 0;
+  }
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
+  }
+}
