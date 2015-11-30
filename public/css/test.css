@@ -8919,10 +8919,8 @@ body {
   background-color: #fff;
 }
 #toolKit {
-  background-color: #e3e3e3;
-  background-image: url('../images/top-nav.png');
-  background-position-x: 42px;
-  background-repeat: no-repeat;
+  background-color: #f00;
+  background-image: url('../images/top-nav2.png');
 }
 #toolKit .navbar-nav > li > a {
   padding-top: 0px;
@@ -8953,6 +8951,9 @@ body {
 }
 #toolKit .toolkit {
   color: #fff !important;
+}
+.top-nav {
+  margin: 7.5px -13px;
 }
 .searchForm {
   margin-top: 2rem;
@@ -9059,6 +9060,23 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
+  #YUheader {
+    display: block;
+    height: auto;
+    background-color: #fff;
+  }
+  #toolKit .nav > li > a {
+    padding: 5px 12px;
+  }
+  .logo {
+    float: left !important;
+  }
+  .searchform {
+    float: right !important;
+  }
+  .searchList {
+    width: 100%;
+  }
   .navbar {
     border-radius: 0;
   }
@@ -9073,6 +9091,10 @@ body {
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+    color: black;
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
@@ -9091,6 +9113,18 @@ body {
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 93dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background-position-x: -250px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 323dpi) {
+  /* Retina-specific stuff here */
+  #toolKit {
+    background-position-x: -610px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {

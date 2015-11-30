@@ -8,32 +8,31 @@
   <link rel="stylesheet" type="text/css" href="css/test.css">
 </head>
 <body>
-
 <header id="YUheader" class="navbar-fixed-top">
   <nav id="toolKit" class="navbar-toolKit navbar-toolKit navbar-fixed-top-toolKit navbar-fixed-top">
-      <div class="container col-md-offset-6">
-        <ul class="nav navbar-nav visible-lg">
-          <li class="visible-lg"><a href="#">Alumi</a></li>
-          <li class="visible-lg"><a href="#">University News</a></li>
-          <li class="visible-lg"><a href="#">Libraries</a></li>
-          <li class="visible-lg"><a href="#">Museum</a></li>
-          <li class="visible-lg"><a href="#">Office &amp; Services</a></li>
-          <li class="visible-lg"><a class="toolkit" href="#">My YU</a></li>
-          <li class="visible-lg"><a class="toolkit" href="#">Student Toolkit</a></li>
+      <div class="container">
+        <ul class="nav navbar-nav visible-lg navbar-right">
+          <li><a href="#">Alumi</a></li>
+          <li><a href="#">University News</a></li>
+          <li><a href="#">Libraries</a></li>
+          <li><a href="#">Museum</a></li>
+          <li><a href="#">Office &amp; Services</a></li>
+          <li><a class="toolkit" href="#">My YU</a></li>
+          <li><a class="toolkit" href="#">Student Toolkit</a></li>
         </ul>
       </div>
-    </nav>
-<nav id="navLogo"class="navLogo navbar navbar-default">
+  </nav>
+    <nav id="navLogo" class="navLogo navbar navbar-default visible-lg">
       <div class="container">
-        <div class="navbar-header">
-          <a class="" href="#"><img src="images/logo2.png" alt=""></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="searchForm navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="" class="form-control">
-            </div>
-        </div>
+      <ul class="nav navbar-nav searchList  visible-lg">
+       <li class="logo"><a class="" href="#"><img src="images/logo3.png" alt=""></a></li>
+        <li class="searchform">
+           <form class="searchForm navbar-form">
+             <label>A place to</label>
+              <input type="text" placeholder="Search" class="form-control">
+           </form>
+        </li>
+      </ul>
       </div>
     </nav>
     <nav class="navbar navbar-inverse navbar-fixed-top-main">
@@ -48,14 +47,21 @@
           <!-- <a class="navbar-brand" href="#">Project name</a> -->
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav visible-lg">
             <li class="active"><a href="#">About YU <span>|</span></a></li>
             <li><a href="#">Academics &amp; Research <span>|</span></a></li>
             <li><a href="#">Admissions <span>|</span></a></li>
             <li><a href="#">Student Life <span>|</span></a></li>
             <li><a href="#">Jewish Living &amp; Learning <span>|</span></a></li>
             <li><a href="#">Support YU</a></li>
-        
+          </ul>
+          <ul class="nav navbar-nav visible-xs">
+            <li class="active"><a href="#">About YU</a></li>
+            <li><a href="#">Academics &amp; Research</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Student Life</a></li>
+            <li><a href="#">Jewish Living &amp; Learning</a></li>
+            <li><a href="#">Support YU</a></li>
           </ul>
           <ul class="nav navbar-nav visible-xs">
               <li class="visible-xs active"><a href="#">Alumi</a></li>
@@ -69,7 +75,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-</header>  
+</header>
 
 
 
@@ -214,5 +220,7 @@
     <script src="js/main.js"></script>
     <script src="js/holder.min.js"></script>
     <!-- <script src="js/extra.js"></script> -->
+
+
 </body>
 </html>

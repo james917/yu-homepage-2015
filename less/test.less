@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -25,18 +26,14 @@ body {
 }
 
 #toolKit {
-  // background-color: #ccc;
-   // background: linear-gradient(90deg, #e3e3e3 74%, #00264b 26%);
-    background-color: #e3e3e3;
-    background-image: url('../images/top-nav.png');
-    background-position-x: 42px;
-    background-repeat: no-repeat;
+    background-color: #f00;
+    background-image: url('../images/top-nav2.png');
   & .navbar-nav > li > a {
     padding-top:0px;
     padding-bottom:0px;
   }
   & .navbar-nav {
-      margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+     margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
        > li > a {
          padding-top:0;
          padding-bottom:0;
@@ -45,7 +42,7 @@ body {
          font-size:12px;
 
       }
-  }
+ }
   & .navbar-fixed-top-toolKit {
       margin-top:0;
       margin-bottom:0;
@@ -64,10 +61,10 @@ body {
   }
 }
 
-// .navbar-toolKit {
-//   background-color:#e3e3e3;
-//   // background-color:red;
-// } 
+
+.top-nav {
+    margin: 7.5px -13px;
+}
 
 
 .searchForm {
@@ -99,7 +96,7 @@ body {
         border-bottom: transparent;
         border-left: transparent;
         border-right: transparent;
-        & .navbar-nav > 
+        & .navbar-nav >
           .active > a{
             color: #707070;
             background-color:transparent;
@@ -114,8 +111,8 @@ body {
 }
 
 
-.navbar-inverse .navbar-nav > .active > a, 
-.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
     color: #707070;
     background-color: #fff;
@@ -197,12 +194,38 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 768px) {
+#YUheader {
+    display: block;
+    height: auto;
+    background-color:#fff;
+}
   #toolKit {
-   // background: linear-gradient(90deg, #e3e3e3 85%, #00264b 15%);
-    // background-color:#e3e3e3; 
+    & .nav > li > a {
+      padding: 5px 12px;
+    }
   }
+
+// .logoList{
+//   width:50%;
+//   border:solid 1px red;
+// }
+.logo{
+  // margin-top:4rem;
+  float: left !important;
+  // border:solid 1px red;
+}
+.searchform{
+  float: right !important;
+  // border:solid 1px blue;
+}
+
+.searchList  {
+  width:100%;
+  // border:solid 1px green;
+}
+
+
   .navbar {
     border-radius:0;
   }
@@ -219,6 +242,10 @@ body {
     padding-left: 0;
   }
 
+.navbar-nav > li {
+    float: left;
+    color: black;
+}
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
@@ -243,29 +270,47 @@ body {
 }
 
 
-// @media 
-// (-webkit-min-device-pixel-ratio: 1), 
-// (min-resolution: 163dpi) {  
+// @media
+// (-webkit-min-device-pixel-ratio: 1),
+// (min-resolution: 163dpi) {
 //     #toolKit {
 //    background: linear-gradient(90deg, #e3e3e3 82%, #00264b 18%);
 //   }
 // }
 
+@media
+(-webkit-min-device-pixel-ratio: 1),
+(min-resolution: 93dpi) {
+    /* Retina-specific stuff here */
+   #toolKit {
+    background-position-x: -250px;
+ }
+}
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 227dpi) { 
+@media
+(-webkit-min-device-pixel-ratio: 1),
+(min-resolution: 323dpi) {
+    /* Retina-specific stuff here */
+   #toolKit {
+    background-position-x: -610px;
+ }
+}
+
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 227dpi) {
     /* Retina-specific stuff here */
     #toolKit {
    // background: linear-gradient(90deg, #e3e3e3 82%, #00264b 18%);
-   // background-color:#e3e3e3; 
+   // background-color:#e3e3e3;
   }
 }
 
 
-// @media 
-// (-webkit-min-device-pixel-ratio: 2), 
-// (min-resolution: 227dpi) { 
+// @media
+// (-webkit-min-device-pixel-ratio: 2),
+// (min-resolution: 227dpi) {
 
 //     #toolKit {
 //    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
@@ -274,10 +319,10 @@ body {
 
 
 
-// @media 
-// (-webkit-min-device-pixel-ratio: 2), 
-// (min-resolution: 227dpi) { 
-    
+// @media
+// (-webkit-min-device-pixel-ratio: 2),
+// (min-resolution: 227dpi) {
+
 //     #toolKit {
 //    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
 //   }
@@ -285,10 +330,29 @@ body {
 
 
 
-// @media 
-// (-webkit-min-device-pixel-ratio: 2), 
-// (min-resolution: 227dpi) { 
+// @media
+// (-webkit-min-device-pixel-ratio: 2),
+// (min-resolution: 227dpi) {
 //     #toolKit {
 //    background: linear-gradient(90deg, #ccc 82%, #00264b 18%);
+//   }
+// }
+
+
+// @media (max-width: 1200px){
+//   #toolKit {
+//     background-image: url('../images/top-nav2.png');
+//     background-position-x: -252px;
+//     background-repeat: no-repeat;
+//   }
+// }
+
+
+
+// @media (max-width: 768px){
+//   #toolKit {
+//     background-image: url('../images/top-nav2.png');
+//     background-position-x: -605px;
+//     background-repeat: no-repeat;
 //   }
 // }
