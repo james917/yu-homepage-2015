@@ -8919,7 +8919,10 @@ body {
   background-color: #fff;
 }
 #toolKit {
-  background: linear-gradient(90deg, #e3e3e3 74%, #00264b 26%);
+  background-color: #e3e3e3;
+  background-image: url('../images/top-nav.png');
+  background-position-x: 42px;
+  background-repeat: no-repeat;
 }
 #toolKit .navbar-nav > li > a {
   padding-top: 0px;
@@ -9056,9 +9059,6 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  #toolKit {
-    background: linear-gradient(90deg, #e3e3e3 85%, #00264b 15%);
-  }
   .navbar {
     border-radius: 0;
   }
@@ -9095,7 +9095,4 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
   /* Retina-specific stuff here */
-  #toolKit {
-    background: linear-gradient(90deg, #e3e3e3 82%, #00264b 18%);
-  }
 }
