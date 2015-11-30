@@ -8919,7 +8919,7 @@ body {
   background-color: #fff;
 }
 #toolKit {
-  background-color: #f00;
+  background-color: #e3e3e3;
   background-image: url('../images/top-nav2.png');
 }
 #toolKit .navbar-nav > li > a {
@@ -8956,7 +8956,26 @@ body {
   margin: 7.5px -13px;
 }
 .searchForm {
+  font-family: "Times New Roman", Times, Palatino Linotype, Georgia, serif;
   margin-top: 2rem;
+}
+.searchForm label {
+  font-size: 0.938em;
+  font-style: italic;
+  color: #a1a1a1;
+}
+.searchForm .form-control {
+  font-size: 0.938em;
+  font-style: italic;
+}
+.searchForm .form-control {
+  height: 25px;
+  background-color: #f2f2f2;
+  border: transparent;
+  width: 300px;
+  border-radius: 0;
+  box-shadow: transparent;
+  -webkit-box-shadow: transparent;
 }
 .navbar-default {
   background-color: #fff;
@@ -9007,12 +9026,16 @@ body {
 #navbar .nav > li > a {
   padding: 10px 0 0 15px;
 }
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+  background: #00264b;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-top: 1;
+  margin-top: 20rem;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -9116,17 +9139,13 @@ body {
   }
 }
 @media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 93dpi) {
-  /* Retina-specific stuff here */
   #toolKit {
-    background-position-x: -250px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 323dpi) {
-  /* Retina-specific stuff here */
-  #toolKit {
-    background-position-x: -610px;
+    background-position-x: 50.5%;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 227dpi) {
   /* Retina-specific stuff here */
+  #toolKit {
+    background-position-x: -610px;
+  }
 }
